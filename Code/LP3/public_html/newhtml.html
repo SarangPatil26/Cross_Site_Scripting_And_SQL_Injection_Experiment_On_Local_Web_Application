@@ -1,0 +1,74 @@
+<html>
+    <style> 
+* {
+  box-sizing: border-box;
+}
+div {
+    width: 25%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+a1 {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+</style>
+<title>Form Example</title>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,top=100,left=500,width=600,height=500')
+  message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+  message += "<li><b>PHONE: </b>" + document.form1.phone.value + "</ul>";
+  DispWin.document.write(message);
+}
+</script>
+</head>
+<body>
+    <center>
+        <h1>Login Page</h1>
+        <div> 
+        <form name='form1'> 
+<br><b>Name:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
+<br><b>Phone: </b> <input TYPE="TEXT" SIZE="15" NAME="phone" maxlength="10">
+<br><input TYPE="submit" VALUE="Display" onClick="display();">
+</form>
+    </div>
+    </center>
+</body>
+</html>
